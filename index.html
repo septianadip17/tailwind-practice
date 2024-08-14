@@ -1,17 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <div class="bg-purple-950">
-    <h1 class="text-3xl font-bold underline text-white text-center">
-      Hello world!
-    </h1>
+  <!-- navbar -->
+  <div class="bg-purple-950 md:bg-red-700 lg:bg-gray-900 xl:bg-blue-900 border-2 border-yellow-300">
+    <!-- container menu -->
+    <div class="border-4 border-green-400 container justify-between flex items-center mx-auto">
+      <!-- logo -->
+      <h1 class="text-3xl font-extralight underline text-white text-center p-2">
+        Hello world!
+      </h1>
+      <!-- menu -->
+      <ul class="flex text-white gap-5">
+        <li class="hover:bg-white hover:text-purple-950 rounded-sm"><a href="Home">Home</a></li>
+        <li class="hover:bg-white hover:text-purple-950 rounded-sm"><a href="About">About</a></li>
+        <li class="hover:bg-white hover:text-purple-950 rounded-sm"><a href="Contact">Contact</a></li>
+        <li class="hover:bg-white hover:text-purple-950 rounded-sm"><a href="Portfolio">Portfolio</a></li>
+        <li class="hover:bg-white hover:text-purple-950 rounded-sm"><a href="Blog">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div class="w-2/4 mx-auto my-5 border-2 border-gray-200 min-h-20 min-w-96 p-5 bg-gray-100 rounded-xl">
+    <h3 class="text-3xl font-medium text-center mb-3">Halo</h3>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quasi totam, debitis culpa officiis beatae ratione
+    fugit repellat aliquam illum sapiente libero officia expedita placeat aperiam sunt pariatur quae incidunt veritatis?
+    Est deserunt, tempore corporis molestiae neque rerum sunt?
   </div>
 </body>
 
