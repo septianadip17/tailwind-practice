@@ -5,6 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    .grid-item{
+      @apply h-40 border-2 border-gray-400 flex justify-center items-center bg-gray-100 rounded-lg
+    }
+  </style>
 </head>
 
 <body>
@@ -35,11 +40,15 @@
     Est deserunt, tempore corporis molestiae neque rerum sunt?
   </div>
 
+  <!-- portfolio -->
   <h3 class="text-3xl font-medium text-center mb-3">Portfolio</h3>
-  <div class="w-4/6 grid grid-cols-3 gap-2 my-5 mx-auto">
-    <div class="h-40 border-2 border-gray-400 flex justify-center items-center bg-gray-100 rounded-lg">01</div>
-    <div class="h-40 border-2 border-gray-400 flex justify-center items-center bg-gray-100 rounded-lg">02</div>
-    <div class="h-40 border-2 border-gray-400 flex justify-center items-center bg-gray-100 rounded-lg">03</div>
+  <div class="w-4/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 my-5 mx-auto text-5xl ">
+    <div class="grid-item">01</div>
+    <div class="grid-item">02</div>
+    <div class="grid-item">03</div>
+    <div class="grid-item">04</div>
+    <div class="grid-item">05</div>
+    <div class="grid-item">06</div>
   </div>
 
 </body>
